@@ -152,7 +152,7 @@ namespace RRRPG
                 player.ShowKill();
                 btnStart.Visible = true;
                 panWeaponSelect.Visible = true;
-                state = -1;
+                state = 0;
                 tmrStateMachine.Enabled = false;
                 if (player.Stats.Health == 0) { player.Stats.Health = 100; }
 
@@ -187,7 +187,7 @@ namespace RRRPG
                 opponent.SayBoned();
                 btnStart.Visible = true;
                 panWeaponSelect.Visible = true;
-                state = -1;
+                state = 0;
                 tmrStateMachine.Enabled = false;
             }
         }
